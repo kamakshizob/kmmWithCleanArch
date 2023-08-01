@@ -4,8 +4,9 @@ import com.dipumba.movies.data.remote.RemoteDataSource
 import com.dipumba.movies.data.util.toMovie
 import com.dipumba.movies.domain.model.Movie
 import com.dipumba.movies.domain.repository.MovieRepository
-
+//  step-11 create a MovieRepositoryImpl and override the method
 internal class MovieRepositoryImpl(
+    //here this needs a instance of movie remote the datasource
     private val remoteDateSource: RemoteDataSource
 ): MovieRepository {
 

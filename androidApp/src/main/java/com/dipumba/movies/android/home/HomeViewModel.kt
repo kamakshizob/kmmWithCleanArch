@@ -8,10 +8,10 @@ import androidx.lifecycle.viewModelScope
 import com.dipumba.movies.domain.model.Movie
 import com.dipumba.movies.domain.usecase.GetMoviesUseCase
 import kotlinx.coroutines.launch
-
-class HomeViewModel(
-    val getMoviesUseCase: GetMoviesUseCase
-): ViewModel(){
+/** step-13 so here HomeViewModel takes getMoviesUseCase and extends ViewModel
+ *
+ * **/
+class HomeViewModel(val getMoviesUseCase: GetMoviesUseCase): ViewModel(){
     var uiState by mutableStateOf(HomeScreenState())
     private var currentPage = 1
 
@@ -23,7 +23,7 @@ class HomeViewModel(
     fun loadMovies(forceReload: Boolean = false){
         if (uiState.loading) return
         if (forceReload) currentPage = 1
-        if (currentPage == 1) uiState = uiState.copy(refreshing = true)
+        if (currentPage == 1) uiState = uiState.copy(refreshing = true) //for the refresh current page
 
         viewModelScope.launch {
             uiState = uiState.copy(

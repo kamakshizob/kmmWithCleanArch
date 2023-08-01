@@ -2,7 +2,7 @@ package com.dipumba.movies.data.remote
 
 import kotlinx.serialization.SerialName
 
-//step-1 creating a data class
+//  step-1 creating a data class
 @kotlinx.serialization.Serializable
 internal data class MovieRemote(
     val id: Int,

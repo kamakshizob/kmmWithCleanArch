@@ -9,6 +9,7 @@ import com.dipumba.movies.domain.model.Movie
 import com.dipumba.movies.domain.usecase.GetMovieUseCase
 import kotlinx.coroutines.launch
 
+/** step-22**/
 class DetailViewModel(
     val getMovieUseCase: GetMovieUseCase,
     val movieId: Int

@@ -2,7 +2,7 @@ package com.dipumba.movies.android.common
 
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
-
+/** step-16**/
 interface Destination {
     val title: String
     val route: String

@@ -1,6 +1,7 @@
 package com.dipumba.movies.android.detail
 
-import android.widget.Space
+/** step-22**/
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*

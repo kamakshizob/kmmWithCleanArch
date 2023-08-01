@@ -23,6 +23,10 @@ import coil.compose.AsyncImage
 import com.dipumba.movies.android.R
 import com.dipumba.movies.domain.model.Movie
 
+/** step-15 ui for the list item for the list
+ *
+ * **/
+
 @Composable
 fun MovieListItem(
     modifier: Modifier = Modifier,

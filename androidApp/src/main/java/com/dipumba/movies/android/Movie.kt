@@ -5,6 +5,8 @@ import com.dipumba.movies.android.di.appModule
 import com.dipumba.movies.di.getSharedModules
 import org.koin.core.context.startKoin
 
+/** step-19**/
+
 class Movie: Application() {
     override fun onCreate() {
         super.onCreate()

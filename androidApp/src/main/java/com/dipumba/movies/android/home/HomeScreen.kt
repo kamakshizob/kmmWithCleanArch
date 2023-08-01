@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.dipumba.movies.android.Red
 import com.dipumba.movies.domain.model.Movie
-
+/** step-14  ui for the home screen **/
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun HomeScreen(

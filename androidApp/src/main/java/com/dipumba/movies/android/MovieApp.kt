@@ -25,6 +25,7 @@ import com.dipumba.movies.android.home.HomeViewModel
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
+/** step-17**/
 
 @Composable
 fun MovieApp() {

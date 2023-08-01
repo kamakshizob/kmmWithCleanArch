@@ -9,13 +9,21 @@ import com.dipumba.movies.domain.usecase.GetMoviesUseCase
 import com.dipumba.movies.util.provideDispatcher
 import org.koin.dsl.module
 
+/** step-13 so here just keeps the things organized
+factory just will create a new instance each time that we need like for our remote data**/
+
 private val dataModule = module {
     factory { RemoteDataSource(get(), get()) }
+
+    /**
+     * RemoteDataSource needs a apiService aswell as dispatcher so we going to tell koin ok i'll
+       provide you these dependencies aswell by calling the get() method. ***/
+
     factory { MovieService() }
 }
 
 private val utilityModule = module {
-    factory { provideDispatcher() }
+    factory { provideDispatcher() }  //this is just for our dispatcher
 }
 
 private val domainModule = module {
@@ -26,7 +34,7 @@ private val domainModule = module {
 
 private val sharedModules = listOf(domainModule, dataModule, utilityModule)
 
-fun getSharedModules() = sharedModules
+fun getSharedModules() = sharedModules  //so whenever need to start koin we can just call this  method
 
 
 
